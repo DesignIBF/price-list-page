@@ -1,0 +1,33 @@
+.image-wrapper {
+  aspect-ratio: 1 / 1;
+  width: 100%; /* or set a fixed width like 300px */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* optional */
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05); /* shading overlay */
+  z-index: 2;
+  pointer-events: none;
+}
+
+#pricelist-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#pricelist .flex-row {
+  flex-direction: row;
+}

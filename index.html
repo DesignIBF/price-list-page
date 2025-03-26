@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template</title>
+    <meta
+      name="description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="spotlightBannerRegularImage">
+        <div class="container max-10 flex-row gap-24px">
+          <div class="container max-4 flex-column j-c-center gap-1">
+            <div
+              class="intro-text-container container flex-column a-i-start gap-5"
+            >
+              <h4>Pricelist H4 text</h4>
+              <h2 class="">Pricelist title text</h2>
+              <p class="">Additional P text for the pricelist page</p>
+            </div>
+
+            <a class="btn btn-primary">Button text</a>
+          </div>
+
+          <div class="container flex-column a-i-end gap-5 order-1-mobile">
+            <div class="aspect-ratio-container container">
+              <a>
+                <div class="img-container">
+                  <img class="img-hd border-4px" src="images/squares.png" />
+                </div>
+              </a>
+            </div>
+            <!-- <figcaption>Credits</figcaption> -->
+          </div>
+        </div>
+      </section>
+      <section id="pricelist">
+        <div class="container flex-column gap-24px">
+          <div class="container max-10 flex-column gap-24px">
+            <div class="container flex-row gap-1 wrap">
+              <!-- buttons that change the content from the pricelist card -->
+
+              <a class="btn btn-tertiary" data-list="content1">Garden Roses</a>
+              <a class="btn btn-tertiary" data-list="content2">Focal Flowers</a>
+              <a class="btn btn-tertiary" data-list="content3"
+                >Filler Flowers</a
+              >
+              <a class="btn btn-tertiary" data-list="content4">Greens</a>
+              <a class="btn btn-tertiary" data-list="content5">Mixed Boxes</a>
+
+              <!-- buttons that change the content from the pricelist card -->
+            </div>
+          </div>
+
+          <div class="container max-4 flex-column j-c-center gap-1">
+            <div
+              class="intro-text-container container flex-column a-i-start gap-5"
+            >
+              <h2 id="pricelist-heading" class="">Garden Roses</h2>
+              <p class="">Additional P text for the pricelist page</p>
+            </div>
+
+            <a class="btn btn-primary">Download Pricelist</a>
+          </div>
+          <div class="container flex-column gap-24px">
+            <!-- container of the pricelist card -->
+            <div
+              class="container flex-row gap-24px"
+              style="border: 1px solid black; padding: 1em; border-radius: 8px"
+              ;
+            >
+              <div class="image-wrapper max-2">
+                <img
+                  id="pricelist-image"
+                  src="assets/images/squares.png"
+                  class="img-square border-4px"
+                />
+              </div>
+              <div id="pricelist-items" class="container flex-column gap-24px">
+                <p>Category</p>
+                <p>Color</p>
+                <p>Flower name</p>
+                <p>Starting from</p>
+              </div>
+            </div>
+
+            <!-- container for the content of the pricelist card -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
